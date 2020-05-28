@@ -5,10 +5,13 @@ const sendButton = document.getElementById('send');
 const output = document.getElementById('output');
 const actions = document.getElementById('actions');
 
-sendButton.addEventListener('click', () => socket.emit('chat.message', {
-    message: message.value,
-    username: username.value
-}));
+sendButton.addEventListener('click', () => {
+    socket.emit('chat.message', {
+        message: message.value,
+        username: username.value
+    });
+    message.value = '';
+});
 
 message.addEventListener('keypress', () => socket.emit('chat.typing', username.value));
 
