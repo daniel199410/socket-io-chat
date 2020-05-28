@@ -2,11 +2,20 @@
 <html lang="es">
     <head>
         <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/main.css">
         <title>Title</title>
     </head>
     <body>
-        Hello World
+        <div id="chat-container">
+            <div id="chat-window">
+                <section id="output"></section>
+                <section id="actions"></section>
+            </div>
+            <label for="username"></label><input type="text" id="username" placeholder="username">
+            <label for="message"></label><input type="text" id="message" placeholder="message">
+            <button id="send">Send</button>
+        </div>
         <script src="/socket.io/socket.io.js" charset="UTF-8"></script>
         <script src="js/chat.js"></script>
     </body>

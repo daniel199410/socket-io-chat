@@ -5,6 +5,50 @@
 }
 
 body {
-    background-color: black;
-    color: white;
+    font-family: 'Nunito', sans-serif;
+}
+
+#chat-container {
+    border: 1px solid #DDD;
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, .5);
+    margin: 30px auto;
+    max-width: 600px;
+}
+
+#chat-window {
+    border-bottom: 1px solid #E9E9E9;
+    color: #555;
+    margin: 0 20px;
+    padding: 14px 0;
+}
+
+#output p {
+    color: #AAA;
+    margin: 0 20px;
+    padding: 14px 0;
+}
+
+#actions p {
+    border-bottom: 1px solid #E9E9E9;
+    color: #555;
+    margin: 0 20px;
+    padding: 14px 0;
+}
+
+input {
+    background: #EEE;
+    border: 0;
+    display: block;
+    padding: 10px 20px;
+    width: 100%;
+}
+
+#send {
+    background: #575ED8;
+    border: 0;
+    border-radius: 0 0 2px 2px;
+    color: #FFF;
+    font-size: 18px;
+    padding: 12px 0;
+    width: 100%;
 }
