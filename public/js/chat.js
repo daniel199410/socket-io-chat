@@ -1,1 +1,1 @@
-console.log('chat');
+const socket = io();
